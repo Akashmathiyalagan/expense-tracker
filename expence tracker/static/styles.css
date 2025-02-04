@@ -1,0 +1,318 @@
+/* Background for Forms */
+.form-bg {
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #2196F3;
+}
+
+.primary-btn:hover {
+    background: #1976D2;
+}
+/* Background for Home Page */
+.home-bg {
+    background: linear-gradient(135deg, #8e24aa, #d81b60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Home Container */
+.home-container {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons in Home */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+.secondary-btn {
+    background: linear-gradient(135deg, #ef6c00, #ff9800);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+/* Login and Register Background */
+.login-bg {
+    background: linear-gradient(135deg, #1e88e5, #64b5f6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-bg {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff8a65, #ff7043);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e64a19, #d84315);
+    transform: scale(1.05);
+}
+
+.link {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.details-section {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.chart-section {
+    flex: 1;
+    text-align: center;
+}
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Backgrounds */
+.form-bg, .register-bg, .login-bg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align title and form vertically */
+}
+
+/* Background Gradient for Different Pages */
+.form-bg, .register-bg {
+    background: linear-gradient(135deg, #43C6AC, #F8FFAE);
+}
+
+.login-bg {
+    background: linear-gradient(135deg, #1e88e5, #64b5f6);
+}
+
+/* Title Styling */
+.title {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increased shadow */
+    width: 400px;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-container:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4); /* Larger shadow on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.form-container h1, .form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-container input:hover, .form-container input:focus {
+    border-color: #1976d2; /* Change border color on hover or focus */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-container .primary-btn {
+    background: #2196F3;
+}
+
+.form-container .primary-btn:hover {
+    background: #1976D2;
+    transform: scale(1.08); /* Slightly increase size on hover */
+}
+
+.form-container .link {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-container .link:hover {
+    text-decoration: underline;
+    color: #0d47a1; /* Darken color on hover */
+}
+
+/* Dashboard Background */
+.dashboard-bg {
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.details-section {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.chart-section {
+    flex: 1;
+    text-align: center;
+}

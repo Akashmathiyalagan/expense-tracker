@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Advice - Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>AI Budget Advice</h1>
+        <nav>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Financial Advice</h2>
+            <p>{{ advice }}</p>
+        </section>
+        <section>
+            <form action="{{ url_for('budget_advice') }}" method="POST">
+                <label for="query">Ask for Advice:</label>
+                <input type="text" id="query" name="query" required>
+                <button type="submit">Get Advice</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI Expense Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>

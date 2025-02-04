@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .form-bg {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100vw;
+            max-width: 750px;
+            text-align: center;
+            overflow: auto;
+        }
+
+        h1 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        select, input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="file"] {
+            border: none;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            background: linear-gradient(135deg, #43a047, #66bb6a);
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #388e3c, #4caf50);
+        }
+
+        a {
+            color: #1976d2;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-bg">
+        <div class="container">
+            <h1>Add Transaction</h1>
+            <form action="/add_transaction" method="POST" enctype="multipart/form-data">
+                <label for="type">Transaction Type:</label>
+                <select name="type" id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                    <option value="saving">Saving</option>
+                </select>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" placeholder="Enter category" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" placeholder="Enter amount" required>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+            <a href="/dashboard">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Insights - Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>AI Financial Insights</h1>
+        <nav>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Spending Trend</h2>
+            <img src="{{ chart_path }}" alt="Spending Trend Chart">
+        </section>
+        <section>
+            <h2>Predicted Next Month's Expense</h2>
+            <p>Estimated Expense: ₹{{ predicted_expense }}</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI Expense Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
